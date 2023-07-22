@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 * {
   margin: 0px;
@@ -121,7 +145,7 @@ a {
 
 /* Project section css starts from here */
 
-.project-section {
+/* .project-section {
   background-color: rgb(231, 231, 231);
   margin-top: 4rem;
 }
@@ -131,18 +155,18 @@ a {
   font-size: 90px;
   text-align: center;
   padding-top: 30px;
-}
+} */
 
 .project-container {
   max-width: 1200px;
   /* to place in center */
-  margin: 0 auto;
+  /* /* margin: 0 auto;
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
-  gap: 120px;
-}
-
+  gap: 120px; */
+} 
+/* 
 .project-card {
   width: 90%;
   height: 550px;
@@ -162,9 +186,8 @@ a {
   right: 0;
   background-color: #1f1f1f9a;
   z-index: 0;
-  /* transform: scaleX(1); */
-}
-
+  } */
+/* 
 .project-card::before {
   content: "";
   position: absolute;
@@ -189,16 +212,14 @@ a {
   color: white;
   font-weight: 600;
   z-index: 1;
-  /* display: none; */
   opacity: 0;
-}
-
+} */
+/* 
 .project-card:hover .project-number{
-  /* display: block; */
   opacity: 1;
   transition: 0.2s;
-}
-
+} */
+/* 
 .project-number-right {
   right: -40px;
   top: -45px;
@@ -235,17 +256,14 @@ a {
 .project-heading{
   font-size: 50px;
   font-weight: bold;
-}
+} */
 
-.icon{
-  /* display: flex; */
-  /* gap: 20rem; */
-
+/* .icon{
   color: white;
   transition: 0.4s;
 
-}
-
+} */
+/* 
 .icon:hover{
 color: var(--bgOrange);
 }
@@ -269,8 +287,6 @@ color: var(--bgOrange);
 
 .skills-container{
   position: relative;
-  /* display: flex;
-  */
   padding: 5rem;
   margin: 10rem auto;
   gap: 30px;
@@ -285,5 +301,217 @@ color: var(--bgOrange);
   font-weight: bold; 
   display: flex;
   flex-direction: column;
+} */
+
+
+
+
+/* Project Section and Contact Section CSS Starts from Here, Reference from : FreeCodeCamp */
+.projects {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
 }
 
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+  width: calc(33.33% - 20px); /* 33.33% width for each project container with 20px margin between them */
+  margin-bottom: 20px;
+}
+
+.project-container p {
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.projects-title{
+  font-size: 35px;
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+
+
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  /* box-sizing: border-box; */
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: var(--primary-color);
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset var(--primary-color);
+  font-size: 0.875rem;
+  outline: none;
+}
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: var(--primary-color);
+}
+
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background-color: grey;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Define the color variables */
+:root {
+  --primary-color: #007bff; /* Deep Blue */
+  --secondary-color: #6c757d; /* Steel Gray */
+  --text-color: #333; /* Dark Gray */
+  --background-color: #f5f5f5; /* Light Gray */
+}
+
+/* Add the new colors to the existing CSS classes */
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  /* box-sizing: border-box; */
+  border: 2px solid var(--secondary-color); /* Use the secondary color for the border */
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Use a more subtle box shadow */
+  background-color: #fff; /* White background color */
+}
+
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: #4993c2; /* Use the primary color for the label text */
+}
+
+.contact-form-container textarea,
+.contact-form-container .input-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color); /* Use the secondary color for the input border */
+  font-size: 0.875rem;
+  outline: none;
+  color: var(--text-color); /* Use dark gray for the text color */
+}
+
+.contact-form-container .input-field::placeholder,
+.contact-form-container textarea::placeholder {
+  color: var(--secondary-color); /* Use the secondary color for the placeholder text */
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  /* background-color: var(--primary-color); Use the primary color for the background */
+  background-color: #4993c2;
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* A slightly darker shade of the primary color on hover */
+}
