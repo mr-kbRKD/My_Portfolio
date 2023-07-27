@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-R71sQIa3IyhjowEEphuPcST7V5XrgQcu5ycVRVlCqRvsC2N5MDzEKjDFIVkbPPk7IcrBuFtB9HnBXY2XK72wQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-R71sQIa3IyhjowEEphuPcST7V5XrgQcu5ycVRVlCqRvsC2N5MDzEKjDFIVkbPPk7IcrBuFtB9HnBXY2XK72wQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
     <!-- Box Icons -->
     <title>KB Portfolio</title>
 </head>
@@ -20,14 +22,18 @@
             </div>
             <div class="nav-items">
                 <div class="nav-items-text">
-                    <a href="#projects">Projects</a>
-                    <a href="#about Me">About Me</a>
+                    <a href="#wrapper">Home</a>
+                    <a href="#about-Me">About Me</a>
                     <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
                     <a href="#contactme">Contact Me</a>
                 </div>
             </div>
+          </body>
         </div>
     </div>
+
+    
     <div class="hero-section">
         <div class="hero-section-left">
             <div class="hero-section-heading">Namaskaram! KULBHUSHAN</div>
@@ -35,17 +41,83 @@
                 I am a <span class="role"></span>
             </div>
             <div class="hero-section-description">
-                I'm a Software Developer and here is my Portfolio website. Here you'll learn all about my journey as a software developer. 
+              I'm a Software Developer and here is my Portfolio website. Here you'll learn all about my journey as a software developer. 
             </div>
-            <div class="hire-btn" id="btn">Hire Me</div>
+            <div class="hero-buttons">
+              <div class="button" id="btn">Hire Me</div>
+              <div class="button" id="btn">Download CV</div>
+            </div>
+
+            <div class="social-icons-div">
+              <section>
+                <div class="social-icons">
+                  <!-- <a href="https://twitter.com/your_twitter_username" target="_blank">g
+                    <i class="fab fa-twitter"></i>
+                  </a> -->
+                  <a href="https://www.linkedin.com/in/kulbhushan-a45a91224/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/mr-kbRKD" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </section>
+            </div>
             <!-- <div class="faded-text">KB RKD</div> -->
-            
-        </div>
-        <div class="hero-section-right">
+            <section id="about-Me">
+              <div class="about-container">
+                <h2>About Me</h2>
+                <p>I am a computer science student currently studying at Chandigarh Group of Colleges. I have a strong background in programming and web development, and have worked on various projects using languages such as HTML, CSS, JavaScript, and Tailwind CSS. I am also skilled in using tools such as Git and Github.</p>
+              </div>
+            </section>
+          </div>
+          <div class="hero-section-right">
             <!-- <img class="major-image" src="Images/Lord_Caitanya_Reveals_The_Universal_Form_To_Advaita_Archarya.jpg" alt="" srcset=""> -->
         </div>
     </div>
-
+    <div class="skill-container">
+      <div class="skill-container">
+        <section class="skills" id="skills">
+          <h2 class="skill-header">My Top Skills</h2>
+    
+          <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+              <div class="skill-icon">
+                <i class="fas fa-code" style="color: #007bff;"></i> <!-- Blue for HTML5 -->
+                <span class="icon-label">HTML5</span>
+              </div>
+              <div class="skill-icon">
+                <i class="fas fa-paint-brush" style="color: #ff4b4b;"></i> <!-- Red for CSS3 -->
+                <span class="icon-label">CSS3</span>
+              </div>
+              <div class="skill-icon">
+                <i class="fab fa-js" style="color: #f0db4f;"></i> <!-- Yellow for JavaScript -->
+                <span class="icon-label">JavaScript</span>
+              </div>
+            </div>
+    
+            <div class="second-set animate__animated animate__pulse">
+              <div class="skill-icon">
+                <i class="fab fa-bootstrap" style="color: #7952b3;"></i> <!-- Purple for Bootstrap -->
+                <span class="icon-label">Bootstrap</span>
+              </div>
+              <!-- <div class="skill-icon">
+                <i class="fab fa-react" style="color: #61dafb;"></i> Light Blue for React
+                <span class="icon-label">React</span>
+              </div> -->
+              <div class="skill-icon">
+            <i class="fas fa-file-code" style="color: #007acc;"></i> <!-- VS Code (fa-file-code) -->
+            <span class="icon-label">VS Code</span>
+          </div>
+              <div class="skill-icon">
+                <i class="fab fa-git" style="color: #f34f29;"></i> <!-- Orange for Git -->
+                <span class="icon-label">Git</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+    </div>
     <div class="project-section">
         <!-- Project section of love babbar course -->
 
@@ -171,7 +243,7 @@
         </div>
     </div> 
     <div class="contact-sect">
-        <section class="contact" id="contact">
+        <section class="contact" id="#contactme">
             <h2>Get In Touch With Me</h2>
             <div class="contact-form-container">
               <div class="contact-form">
@@ -221,22 +293,9 @@
             </div>
           </section>
 
-          <div class="social-buttons">
+          <!-- !!!! If you wants to place these buttons at the right center border of page -->
+          <!-- <div class="social-buttons">
             <div class="socials">
-                <!-- <a href="#" target="_blank"
-                  ><img
-                    src="assets/icons/icons8-twitter-circled.gif"
-                    alt="Twitter"
-                    loading="lazy"
-                    class="socicon"
-                /></a> -->
-                <!-- <a href="#" target="_blank"
-                  ><img
-                    src="assets/icons/icons8-instagram.gif"
-                    alt="Instagram"
-                    loading="lazy"
-                    class="socicon"
-                /></a> -->
                 <a href="#" target="_blank"
                   ><img
                     src="assets/icons/icons8-linkedin-circled.gif"
@@ -247,9 +306,19 @@
                 <a href="#" target="_blank"
                   ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
                 /></a>
-          </div>
+          </div> -->
+
+          <!-- Copyright section  -->
+          <footer class="footer">
+            <div class="container">
+              <p> Created by 
+                <span class="span-copyright-name">
+                  KB
+                </span> &copy; 2023. All rights reserved.</p>
+            </div>
+          </footer>
     </div>
-</div>
+
 <!-- 
  <div id="skills"class="container skills-container">
     <div class="skill-container-left">
@@ -270,9 +339,7 @@
  </div> -->
 
 
- <div class="skill-container-right">
-    
- </div>
+ 
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
