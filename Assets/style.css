@@ -181,9 +181,14 @@ a {
   /* letter-spacing: 10px; */
   gap: 10px;
 }
-/* .button2{
-  margin-left: 20px;
-} */
+#btn2{
+  text-decoration: none;
+}
+a{
+  color: white;
+}
+
+
 
 /* About section  */
 .about-container{
@@ -778,4 +783,26 @@ body {
 
 .footer{
   color: #4993c2;
+}
+
+/* CSS for the scroll-up arrow */
+.scroll-up-arrow {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 999; /* Set a higher z-index to ensure the arrow is on top of other elements */
+}
+
+.scroll-up-arrow i {
+  font-size: 20px;
+}
+
+/* Show the scroll-up arrow when the user scrolls down */
+.show-scroll-up-arrow {
+  display: block;
 }
