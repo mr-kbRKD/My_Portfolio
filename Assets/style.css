@@ -184,7 +184,10 @@ a {
 #btn2{
   text-decoration: none;
 }
-a{
+#btn2 a{
+  color: white;
+}
+#btn a{
   color: white;
 }
 
@@ -595,6 +598,7 @@ body {
 
 .project-details {
   margin-bottom: var(--bottom-margin);
+  /* max-width: 800px; */
 }
 
 .project-card {
